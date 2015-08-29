@@ -1,1 +1,29 @@
-
+---
+#write here the world name where you want to give item at player
+world: world
+#write here item ID
+ID: 0
+#write here item damage
+Damage: 0
+#write here item amount
+Ammount: 64
+#write here slot number (from 0 to 35)
+slot: 0
+ID2: 
+Damage2: 
+Ammount2: 
+slot2: 
+#you can add more item,just repeate this and change numbers! the max is 10
+#write here first command item
+item1: 0
+commands1:
+-
+-
+-
+item2: 1
+commands2:
+-
+-
+-
+#you can add more item,the max is 10 commanditems. Also you can add infinite commands on every item!
+...
