@@ -13,6 +13,7 @@ use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\event\entity\EntityLevelChangeEvent;
 use pocketmine\utils\Config;
 use pocketmine\inventory\PlayerInventory;
+use pocketmine\command\ConsoleCommandSender;
 
 class Main extends PluginBase implements Listener{
 
@@ -42,7 +43,7 @@ $this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{pl
        }
      }
 $configitem2 = $this->getConfig()->get("item2");
-foreach($this->getConfif()->get("commands2") as $cmd2){
+foreach($this->getConfig()->get("commands2") as $cmd2){
 if($item->getID() == $configitem2){
 $this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $cmd2));
        }
