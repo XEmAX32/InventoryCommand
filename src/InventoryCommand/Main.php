@@ -139,7 +139,7 @@ $player->getInventory()->setItem($slot,$item);
 	}
 
 	public function onLevelChange(EntityLevelChangeEvent $event){
-echo __METHOD__.",".__LINE__."\n";//##DEBUG
+echo __METHOD__.",".__LINE__."\n";
 if($event->isCancelled()) return;
 $player = $event->getEntity();
 if(!($player instanceof Player)) return;
