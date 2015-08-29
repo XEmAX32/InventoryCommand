@@ -96,13 +96,6 @@ $this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{pl
          }
       }
 }
-public function onInteract(PlayerInteractEvent $event){
-    $item = $event->getItem();
-    if($item->getId() == Item::COMPASS && ($event->getAction() == PlayerInteractEvent::RIGHT_CLICK_AIR || $event->getAction() == PlayerInteractEvent::RIGHT_CLICK_BLOCK)){
-        $player = $event->getPlayer();
-        $player->getInventory()->open($player);
-    }
-}
 
 private function saveInventory(Player $player,Level $level) {
 $n = trim(strtolower($player->getName()));
