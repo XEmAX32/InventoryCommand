@@ -26,4 +26,18 @@ commands2:
 -
 -
 #you can add more item,the max is 10 commanditems. Also you can add infinite commands on every item!
+
+#write the di of the Item giver
+ItemGiver:
+#wite the di of the items Who you want to give
+Item1:
+Item2:
+Item3:
+Item4:
+Item5:
+Item6:
+Item7:
+Item8:
+Item9:
+Item10:
 ...
